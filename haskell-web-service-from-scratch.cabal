@@ -25,13 +25,14 @@ executable haskell-web-service-from-scratch
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
-    -- other-modules:
+    other-modules: Article
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
-    build-depends:    base ^>=4.14.2.0,
-                      scotty,
-                      http-types,
-                      text
+    build-depends:    base ^>=4.14.2.0
+                    , scotty
+                    , http-types
+                    , text
+                    , aeson
     hs-source-dirs:   app
     default-language: Haskell2010
