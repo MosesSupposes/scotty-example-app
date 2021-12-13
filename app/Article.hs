@@ -6,12 +6,13 @@ import Data.Text.Lazy.Encoding
 import Data.Aeson
 import Control.Applicative
 
+type Id = Integer
 type Title = Text
 type BodyText = Text
 
 -- Define the Article constructor
 -- e.g. Article 12 "some title" "some body text"
-data Article = Article Integer Title BodyText 
+data Article = Article Id Title BodyText 
     deriving (Show)
 
 -- Tell Aeson how to create an Article object from JSON string
