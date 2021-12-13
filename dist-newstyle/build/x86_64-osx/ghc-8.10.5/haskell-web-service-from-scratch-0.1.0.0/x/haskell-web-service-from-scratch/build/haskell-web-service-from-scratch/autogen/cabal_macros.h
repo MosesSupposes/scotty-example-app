@@ -10,6 +10,16 @@
   (major1) == 0 && (major2) <  1 || \
   (major1) == 0 && (major2) == 1 && (minor) <= 0)
 #endif /* MIN_VERSION_haskell_web_service_from_scratch */
+/* package aeson-2.0.2.0 */
+#ifndef VERSION_aeson
+#define VERSION_aeson "2.0.2.0"
+#endif /* VERSION_aeson */
+#ifndef MIN_VERSION_aeson
+#define MIN_VERSION_aeson(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  0 || \
+  (major1) == 2 && (major2) == 0 && (minor) <= 2)
+#endif /* MIN_VERSION_aeson */
 /* package base-4.14.2.0 */
 #ifndef VERSION_base
 #define VERSION_base "4.14.2.0"
